@@ -178,15 +178,6 @@ nav ul li a {
     padding: 8px;
     display: block;
     transition: transform 0.2s ease, color 0.2s ease;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    outline: none;
-}
-
-* {
-    -webkit-tap-highlight-color: transparent;
 }
 
 nav ul li a:hover {
@@ -578,6 +569,15 @@ footer, hr {
 }
 
 /* Media queries for different screens and all elements within the webpage */
+@media (hover: hover) {
+    nav ul li a:hover {
+      transform: scale(1.2);
+      background-color: #4682B4;
+      border-radius: 20px;
+      color: #fff;
+    }
+  }
+
 @media only screen and (max-width: 420px) {
     .scroll-container {
         object-fit: contain;
