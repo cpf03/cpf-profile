@@ -182,6 +182,11 @@ nav ul li a {
     -webkit-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
+    outline: none;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav ul li a:hover {
