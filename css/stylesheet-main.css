@@ -187,6 +187,12 @@ nav ul li a:hover {
     color: #fff;
 }
 
+nav ul li a:active, nav ul li a:focus {
+    background-color: transparent;
+    color: #102A43;
+}
+
+
 /* Welcome Part Style */
 .welcome-container {
     display: grid;
