@@ -15,6 +15,8 @@ function showfunFact() {
     document.getElementById('pfunfact').innerHTML = funFacts[randomfunFact];
     document.getElementById('pfunfact').style.display = "block";
 
+    document.getElementById('pfunfact').scrollIntoView({ behavior: "smooth", block: "center" });
+
     clearTimeout(window.hideFunFact);
 
     window.hideFunFact = setTimeout(function() {
