@@ -1,4 +1,8 @@
-# This is my personal web profile
+# My Personal Web Profile
+As a mini-project, this one page personal web profile includes the following:
+- Header
+- 'Navigation Menu - links to the sections of the webpage: About Me, Hobbies & Interests, and Contact Info.
+- Footer'
 
 ## For the Live Demo
 [https://cpf03.github.io/cpf-profile/]
