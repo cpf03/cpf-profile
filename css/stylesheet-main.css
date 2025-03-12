@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Main Body Style - for all of the most elements within the webpage */
+/* Main Body Style - across the elements within the webpage */
 h1 {
     font-family: "Libre Franklin", serif;
     font-optical-sizing: auto;
@@ -55,6 +55,76 @@ p {
     line-height: 1.6;
 }
 
+html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #D1E3F0;
+}
+
+body {
+    animation: nav-load 0.7s ease-in-out;
+}
+
+  @keyframes nav-load {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styles for the header and site-title class*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 100%;
+}
+
+.site-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.site-title h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+.site-title p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Dividers and its backgrounds for each section of the webpage */
+.elevate-section {
+    max-width: 1024px;
+    min-width: auto;
+    margin: auto;
+    margin-top: 25px;
+    padding: 40px;
+    background: #F7FAFC;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+/* Styles for the About Me Pics*/
 p img {
     margin: 0 15px 10px 10px;
     width: 250px;
@@ -77,6 +147,7 @@ p img {
     max-width: 100%;  
 }
 
+/* Styles for list*/
 li {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
@@ -110,46 +181,6 @@ li p {
     color: #334E68;
     padding: 8px 24px 24px 24px;
     line-height: 1.6;
-}
-
-html, body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    background-color: #D1E3F0;
-}
-
-body {
-    animation: nav-load 0.7s ease-in-out;
-}
-
-  @keyframes nav-load {
-    from {
-        opacity: 0;
-        transform: scale(0.85);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Dividers and its backgrounds for each section of the webpage */
-.elevate-section {
-    max-width: 1024px;
-    min-width: auto;
-    margin: auto;
-    margin-top: 25px;
-    padding: 40px;
-    background: #F7FAFC;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 /* Navigation Menu Style */
@@ -222,6 +253,29 @@ nav ul li a:hover {
     }
 }
 
+
+/* Style for the gradient part in the welcome part*/
+.gradientPart {
+    background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #89f7fe, #66a6ff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    animation-iteration-count: infinite;
+    min-height: 100vh;
+}
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Styles for the funfact*/
 #funFactbutton {
     display: flex;
     justify-content: center;
@@ -275,27 +329,6 @@ nav ul li a:hover {
     border-radius: 5px;
     width: fit-content;
     display: none;
-}
-
-/* Style for the gradient part in the welcome part*/
-.gradientPart {
-    background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #89f7fe, #66a6ff);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    animation-iteration-count: infinite;
-    min-height: 100vh;
-}
-
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 /* About Me Style */
